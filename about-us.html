@@ -67,7 +67,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="breadcrumb-option">
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                         <span>About Us</span>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-option" style="height: 180px;">
                         <div class="fo-logo" style="height: 19px;">
-                            <a href="#">
+                            <a href="index.html">
                                 <img src="img/BQLOGO.png" style="height: 40px; width: 40px;" alt="">
                             </a>
                         </div>
@@ -181,11 +181,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget">
-                        <h5>Join The Newsletter</h5>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
-                        <form action="#" class="news-form">
-                            <input type="text" placeholder="Enter your mail">
-                            <button type="submit">Subscribe</button>
+                        <h5>Get In Touch With Us.</h5>
+                        <form id="whatsapp-form" class="news-form">
+                            <input type="text" id="message-input" placeholder="Enter your message">
+                            <button type="submit">Send</button>
                         </form>
                     </div>
                 </div>
@@ -193,12 +192,12 @@
                     <div class="footer-widget">
                         <h5>Gallery</h5>
                         <div class="insta-pic">
-                            <img src="img/instagram/instagram-1.jpg" alt="">
-                            <img src="img/instagram/instagram-2.jpg" alt="">
-                            <img src="img/instagram/instagram-3.jpg" alt="">
-                            <img src="img/instagram/instagram-4.jpg" alt="">
-                            <img src="img/instagram/instagram-5.jpg" alt="">
-                            <img src="img/instagram/instagram-6.jpg" alt="">
+                            <img src="img/gallery/Hospital-1.jpg" alt="">
+                            <img src="img/gallery/security-2.jpeg" alt="">
+                            <img src="img/gallery/corporate-1.png" alt="">
+                            <img src="img/gallery/petrol pump-2.jpg" alt="">
+                            <img src="img/gallery/Chef-1.jpg" alt="">
+                            <img src="img/portfolio/safety-1.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -210,6 +209,17 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
+     <script>
+        document.getElementById('whatsapp-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var message = document.getElementById('message-input').value;
+    var encodedMessage = encodeURIComponent(message);
+    var phoneNumber = '+919946742829'; 
+    var whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+    window.open(whatsappURL, '_blank');
+});
+
+     </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>

@@ -213,9 +213,9 @@
                 <!-- Card 2 -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="portfolio-card">
-                        <img src="img/portfolio/portfolio-2.jpg" alt="Portfolio Item 2" class="card-img-top">
+                        <img src="img/portfolio/security-1.jpeg" alt="Portfolio Item 2" class="card-img-top">
                         <div class="card-body">
-                            <a href="img/portfolio/portfolio-2.jpg" class="search-icon image-popup"><i class="fa fa-search"></i></a>
+                            <a href="img/portfolio/security-1.jpeg" class="search-icon image-popup"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                 </div>
@@ -231,26 +231,26 @@
                 <!-- Card 4 -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="portfolio-card">
-                        <img src="img/portfolio/portfolio-4.jpg" alt="Portfolio Item 4" class="card-img-top">
+                        <img src="img/portfolio/Hospital-1.jpg" alt="Portfolio Item 4" class="card-img-top">
                         <div class="card-body">
-                            <a href="img/portfolio/portfolio-4.jpg" class="search-icon image-popup"><i class="fa fa-search"></i></a>
+                            <a href="img/portfolio/Hospital-1.jpg" class="search-icon image-popup"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="portfolio-card">
-                        <img src="img/portfolio/portfolio-3.jpg" alt="Portfolio Item 3" class="card-img-top">
+                        <img src="img/portfolio/safety-1.jpg" alt="Portfolio Item 3" class="card-img-top">
                         <div class="card-body">
-                            <a href="img/portfolio/portfolio-3.jpg" class="search-icon image-popup"><i class="fa fa-search"></i></a>
+                            <a href="img/portfolio/safety-1.jpg" class="search-icon image-popup"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                 </div>
                 <!-- Card 5 -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="portfolio-card">
-                        <img src="img/portfolio/portfolio-4.jpg" alt="Portfolio Item 4" class="card-img-top">
+                        <img src="img/portfolio/corporate-1.png" alt="Portfolio Item 4" class="card-img-top">
                         <div class="card-body">
-                            <a href="img/portfolio/portfolio-4.jpg" class="search-icon image-popup"><i class="fa fa-search"></i></a>
+                            <a href="img/portfolio/corporate-1.png" class="search-icon image-popup"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                 </div>
@@ -399,7 +399,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-option" style="height: 180px;">
                         <div class="fo-logo" style="height: 19px;">
-                            <a href="#">
+                            <a href="index.html">
                                 <img src="img/BQLOGO.png" style="height: 40px; width: 40px;" alt="">
                             </a>
                         </div>
@@ -425,11 +425,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget">
-                        <h5>Join The Newsletter</h5>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
-                        <form action="#" class="news-form">
-                            <input type="text" placeholder="Enter your mail">
-                            <button type="submit">Subscribe</button>
+                        <h5>Get In Touch With Us.</h5>
+                        <form id="whatsapp-form" class="news-form">
+                            <input type="text" id="message-input" placeholder="Enter your message">
+                            <button type="submit">Send</button>
                         </form>
                     </div>
                 </div>
@@ -437,18 +436,18 @@
                     <div class="footer-widget">
                         <h5>Gallery</h5>
                         <div class="insta-pic">
-                            <img src="img/instagram/instagram-1.jpg" alt="">
-                            <img src="img/instagram/instagram-2.jpg" alt="">
-                            <img src="img/instagram/instagram-3.jpg" alt="">
-                            <img src="img/instagram/instagram-4.jpg" alt="">
-                            <img src="img/instagram/instagram-5.jpg" alt="">
-                            <img src="img/instagram/instagram-6.jpg" alt="">
+                            <img src="img/gallery/Hospital-1.jpg" alt="">
+                            <img src="img/gallery/security-2.jpeg" alt="">
+                            <img src="img/gallery/corporate-1.png" alt="">
+                            <img src="img/gallery/petrol pump-2.jpg" alt="">
+                            <img src="img/gallery/Chef-1.jpg" alt="">
+                            <img src="img/portfolio/safety-1.jpg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="copyright-text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright  All rights reserved | This template is made with 
+            <div class="copyright-text"><p>
+                    Copyright  All rights reserved | BQ UNIFORMS
         </div>
     </section>
     <!-- Footer Section End -->
@@ -472,6 +471,17 @@
             this.classList.add('hidden');
             document.getElementById('moreBtn').style.display = 'inline-block';
         });
+        </script>
+        <script>
+            document.getElementById('whatsapp-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var message = document.getElementById('message-input').value;
+    var encodedMessage = encodeURIComponent(message);
+    var phoneNumber = '+919946742829'; 
+    var whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+    window.open(whatsappURL, '_blank');
+});
+
         </script>
               
     <script src="js/jquery-3.3.1.min.js"></script>

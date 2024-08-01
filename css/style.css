@@ -945,12 +945,27 @@ ol {
 	width: 100%;
 }
 
+.footer-widget .insta-pic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Space between images */
+}
+
 .footer-widget .insta-pic img {
+    width: calc(33.33% - 5px); 
+    height: 90px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* .footer-widget .insta-pic img {
 	margin-right: 5px;
 	width: calc(33.33% - 5px);
 	float: left;
 	margin-bottom: 5px;
-}
+} */
 
 .copyright-text {
 	padding-top: 25px;
