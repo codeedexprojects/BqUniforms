@@ -1958,6 +1958,7 @@ ol {
 		top: 20px;
 		display: inline-block;
 		float: none;
+		margin-top: -8px;
 	}
 	.slicknav_nav {
 		background: #666;
@@ -2034,6 +2035,9 @@ ol {
 		font-size: 40px;
 		line-height: normal;
 	}
+	.headimg{
+		margin-top: -17px;
+	}
 }
 
 /* Small Mobile: 320px */
@@ -2043,6 +2047,7 @@ ol {
 		font-size: 36px;
 		line-height: normal;
 	}
+	
 	.testimonial-item .ti-pic {
 		float: none;
 		margin-right: 0;
@@ -2086,3 +2091,4 @@ ol {
 		font-size: 22px;
 	}
 }
+
