@@ -86,6 +86,7 @@ p {
 }
 
 img {
+	margin-top: -19px;
 	max-width: 100%;
 }
 
@@ -1784,7 +1785,7 @@ ol {
     }
     
     .gallery-section .gallery-controls ul li {
-        width: 100%;
+        width: 95%;
     }
 }
 
