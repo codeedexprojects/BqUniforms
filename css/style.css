@@ -1935,6 +1935,9 @@ ol {
 	.as-text .about-counter .ac-item:after {
 		right: -7px;
 	}
+	.headimg{
+		margin-top: -4px;
+	}
 }
 
 @media only screen and (max-width: 991px) {
@@ -1955,6 +1958,9 @@ ol {
 	}
 	.as-text.ap-text {
 		padding-top: 30px;
+	}
+	.headimg{
+		margin-top: -4px;
 	}
 }
 
@@ -2052,7 +2058,7 @@ ol {
 		line-height: normal;
 	}
 	.headimg{
-		margin-top: -17px;
+		margin-top: -25px;
 	}
 }
 
@@ -2105,6 +2111,9 @@ ol {
 	}
 	.contact-text .ct-item .ci-icon span {
 		font-size: 22px;
+	}
+	.headimg{
+		margin-top: -25px;
 	}
 }
 
