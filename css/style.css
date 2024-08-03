@@ -123,7 +123,7 @@ ol {
 }
 
 .section-title span {
-	color: #e32879;
+	color: #ff610b;
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -171,7 +171,7 @@ ol {
 .primary-btn {
 	font-size: 16px;
 	color: #ffffff;
-	background: #e32879;
+	background: #ff610b;
 	display: inline-block;
 	font-weight: 700;
 	padding: 12px 30px 10px;
@@ -183,8 +183,8 @@ ol {
 	font-weight: 700;
 	padding: 10px 34px;
 	display: inline-block;
-	background: #e32879;
-	border: 1px solid #e32879;
+	background: #ff610b;
+	border: 1px solid #ff610b;
 }
 
 /* Preloder */
@@ -310,15 +310,15 @@ ol {
 }
 
 .main-menu ul li .dropdown li a:hover {
-	color: #e32879;
+	color: #ff610b;
 }
 
 .main-menu ul li.active a {
-	color: #e32879;
+	color: #ff610b;
 }
 
 .main-menu ul li:hover>a {
-	color: #e32879;
+	color: #ff610b;
 }
 
 .main-menu ul li:hover .dropdown {
@@ -380,7 +380,7 @@ ol {
 
 
 .hs-text span {
-	color: #e32879;
+	color: #ff610b;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -496,7 +496,7 @@ ol {
 }
 
 .service-item:hover {
-    border-bottom: 3px solid #e32879;
+    border-bottom: 3px solid #ff610b;
 }
 
 .service-item h4 {
@@ -512,7 +512,7 @@ ol {
 }
 
 .primary-btn {
-    background: #e32879;
+    background: #ff610b;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
@@ -520,7 +520,7 @@ ol {
 }
 
 .primary-btn:hover {
-    background: #c71f63;
+    background: #ff610b;
 }
 
 
@@ -609,7 +609,7 @@ ol {
 
 .counter-item .ci-number {
 	font-size: 48px;
-	color: #e32879;
+	color: #ff610b;
 	font-weight: 700;
 	line-height: 50px;
 	position: absolute;
@@ -664,7 +664,7 @@ ol {
 
 .testimonial-slider.owl-carousel .owl-dots button.owl-dot.active {
 	width: 27px;
-	background: #e32879;
+	background: #ff610b;
 	border-radius: 50px;
 }
 
@@ -701,7 +701,7 @@ ol {
 
 .testimonial-item .ti-text .ti-title span {
 	font-size: 12px;
-	color: #e32879;
+	color: #ff610b;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -736,7 +736,7 @@ ol {
 
 .ctc-text .primary-btn.ctc-btn {
 	background: #ffffff;
-	color: #e32879;
+	color: #ff610b;
 }
 
 /*---------------------
@@ -800,7 +800,7 @@ ol {
 
 .member-item .mi-text .mt-title span {
 	font-size: 12px;
-	color: #e32879;
+	color: #ff610b;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -872,7 +872,7 @@ ol {
 }
 
 .footer-option .fo-social a:hover {
-	background: #e32879;
+	background: #ff610b;
 }
 
 .footer-widget {
@@ -940,7 +940,7 @@ ol {
 	color: #ffffff;
 	font-weight: 700;
 	display: block;
-	background: #e32879;
+	background: #ff610b;
 	border: none;
 	padding: 12px 0;
 	width: 100%;
@@ -976,7 +976,7 @@ ol {
 }
 
 .copyright-text i {
-	color: #e32879;
+	color: #ff610b;
 }
 
 .copyright-text a {
@@ -984,7 +984,7 @@ ol {
 }
 
 .copyright-text a:hover {
-	color: #e32879;
+	color: #ff610b;
 }
 
 .whatsapp-float {
@@ -1119,7 +1119,7 @@ ol {
     display: block;
     width: 100px;
     height: 4px;
-    background: #e32879; /* Accent color */
+    background: #ff610b; /* Accent color */
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -1137,7 +1137,7 @@ ol {
 
 /* Strong text styling */
 .services-description strong {
-    color: #e32879;
+    color: #ff610b;
     font-weight: 700;
 }
 
@@ -1179,7 +1179,7 @@ ol {
 
 .blog-section .blog-btn .primary-btn {
 	background: #222222;
-	border: 2px solid #e32879;
+	border: 2px solid #ff610b;
 }
 
 .blog-item {
@@ -1189,7 +1189,7 @@ ol {
 }
 
 .blog-item.solid-bg {
-	background: #e32879;
+	background: #ff610b;
 	padding: 55px 45px 55px 65px;
 }
 
@@ -1235,7 +1235,7 @@ ol {
 .blog-item .bi-text ul li {
 	list-style: none;
 	display: inline-block;
-	color: #e32879;
+	color: #ff610b;
 	font-size: 14px;
 	margin-right: 8px;
 }
@@ -1282,7 +1282,7 @@ ol {
 
 .blog-item .bi-text .bt-author .ba-text span {
 	font-size: 12px;
-	color: #e32879;
+	color: #ff610b;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -1301,7 +1301,7 @@ ol {
 	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: 700;
-	background: #e32879;
+	background: #ff610b;
 	padding: 5px 26px;
 }
 
@@ -1453,7 +1453,7 @@ ol {
 }
 
 .bd-text .tag-share .tags a:hover {
-	background: #e32879;
+	background: #ff610b;
 }
 
 .bd-text .tag-share .social-share {
@@ -1470,7 +1470,7 @@ ol {
 }
 
 .bd-text .tag-share .social-share a:hover {
-	color: #e32879;
+	color: #ff610b;
 }
 
 .bd-text .tag-share .social-share span {
@@ -1512,7 +1512,7 @@ ol {
 }
 
 .bd-text .blog-author .bt-social a:hover {
-	color: #e32879;
+	color: #ff610b;
 }
 
 .bd-text .blog-author .bt-social a:last-child {
@@ -1723,7 +1723,7 @@ ol {
 
 .gallery-section .gallery-controls ul li.active,
 .gallery-section .gallery-controls ul li:hover {
-    background: #e32879;
+    background: #ff610b;
     color: #fff;
     transform: scale(1.1);
 }
@@ -1805,21 +1805,21 @@ ol {
 }
 
 .btn {
-    background-color: #e32879;
+    background-color: #ff610b;
     color: #fff;
 }
 
 .btn:hover {
-    background-color: #c10b5a;
+    background-color: #d85007;
 }
 
 .btn {
-    background-color: #e32879;
+    background-color: #ff610b;
     color: #fff;
 }
 
 .btn:hover {
-    background-color: #c10b5a;
+    background-color: #d85007;
 }
 
 /* Hide extra images initially */
@@ -1876,7 +1876,7 @@ ol {
 }
 
 .contact-text .ct-item .ci-icon span {
-	color: #e32879;
+	color: #ff610b;
 	font-size: 30px;
 }
 
@@ -2004,12 +2004,12 @@ ol {
 	}
 	.slicknav_nav a:hover {
 		border-radius: 0;
-		background: #e32879;
+		background: #ff610b;
 		color: #ffffff;
 	}
 	.slicknav_nav .slicknav_row:hover {
 		border-radius: 0;
-		background: #e32879;
+		background: #ff610b;
 		color: #ffffff;
 	}
 	.breadcrumb-text {
