@@ -366,6 +366,54 @@
 });
 
         </script>
+
+<script>
+    $(document).ready(function () {
+        var mixer = mixitup('.gallery-filter');
+
+        // Handle the fragment identifier
+        var hash = window.location.hash.substring(1); // Remove the '#' from the hash
+        if (hash) {
+            // Apply the filter based on the hash value
+            mixer.filter('.' + hash);
+        }
+
+        // Show more/less functionality
+        var itemsToShow = 12; // Number of items to show initially
+        var $items = $('.gallery-filter .gs-item');
+        var totalItems = $items.length;
+
+        // Show the initial set of items
+        $items.slice(0, itemsToShow).addClass('show');
+
+        $('#show-more').click(function () {
+            var currentlyVisible = $('.gallery-filter .gs-item.show').length;
+            var nextSet = currentlyVisible + itemsToShow;
+            $items.slice(currentlyVisible, nextSet).addClass('show');
+
+            if (nextSet >= totalItems) {
+                $('#show-more').addClass('d-none');
+                $('#show-less').removeClass('d-none');
+            }
+        });
+
+        $('#show-less').click(function () {
+            var currentlyVisible = $('.gallery-filter .gs-item.show').length;
+            var prevSet = currentlyVisible - itemsToShow;
+            if (prevSet < 0) {
+                prevSet = 0;
+            }
+            $items.slice(prevSet, currentlyVisible).removeClass('show');
+
+            if (prevSet === 0) {
+                $('#show-less').addClass('d-none');
+            }
+            $('#show-more').removeClass('d-none');
+        });
+    });
+</script>
+  
+        
         
    
         

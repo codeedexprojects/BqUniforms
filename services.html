@@ -98,6 +98,34 @@
     
     <!-- Blog Section End -->
 
+    <style>
+        .service-item {
+            cursor: pointer;
+            transition: background-color 0.3s;
+            position: relative;
+        }
+        .service-item:hover {
+            background-color: #ff610b;
+        }
+        .service-item img {
+            height: 70px;
+            width: 70px;
+        }
+        .service-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Space between images */
+            margin-top: 10px;
+        }
+        .service-gallery img {
+            height: 50px; /* Adjust height as needed */
+            width: 50px; /* Adjust width as needed */
+            object-fit: cover;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
 
     <section class="services-section spad">
         <br><br>  
