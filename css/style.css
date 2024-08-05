@@ -2117,3 +2117,6 @@ ol {
 	}
 }
 
+.hidden {
+    display: none;
+}

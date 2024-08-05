@@ -230,11 +230,9 @@
                     </a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <button id="moreBtn" class="primary-btn">More</button>
-                    <button id="lessBtn" class="primary-btn hidden">View Less</button>
-                </div>
+            <div class="col-lg-12 text-center">
+                <button id="moreBtn" class="primary-btn">More</button>
+                <button id="lessBtn" class="primary-btn hidden">View Less</button>
             </div>
         </div>
     </section>
@@ -350,75 +348,6 @@
     </section>
     <!-- Counter Section End -->
 
-    <!-- Testimonial Section Begin -->
-    <!-- <section class="testimonial-section spad">
-        <div class="container">
-            <div class="row testimonial-slider owl-carousel">
-                <div class="col-lg-6">
-                    <div class="testimonial-item">
-                        <div class="ti-pic">
-                            <img src="img/testimonial/testimonial-1.jpg" alt="">
-                        </div>
-                        <div class="ti-text">
-                            <div class="ti-title">
-                                <h4>Travis Crawford</h4>
-                                <span>Designer</span>
-                            </div>
-                            <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                                magnam aliquam quaerat voluptatem.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="testimonial-item">
-                        <div class="ti-pic">
-                            <img src="img/testimonial/testimonial-2.jpg" alt="">
-                        </div>
-                        <div class="ti-text">
-                            <div class="ti-title">
-                                <h4>Noah Padilla</h4>
-                                <span>Designer</span>
-                            </div>
-                            <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                                magnam aliquam quaerat voluptatem.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="testimonial-item">
-                        <div class="ti-pic">
-                            <img src="img/testimonial/testimonial-3.jpg" alt="">
-                        </div>
-                        <div class="ti-text">
-                            <div class="ti-title">
-                                <h4>Noah Padilla</h4>
-                                <span>Designer</span>
-                            </div>
-                            <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                                magnam aliquam quaerat voluptatem.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="testimonial-item">
-                        <div class="ti-pic">
-                            <img src="img/testimonial/testimonial-4.jpg" alt="">
-                        </div>
-                        <div class="ti-text">
-                            <div class="ti-title">
-                                <h4>Noah Padilla</h4>
-                                <span>Designer</span>
-                            </div>
-                            <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                                magnam aliquam quaerat voluptatem.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Testimonial Section End -->
-
     <!-- Call To Action Section Begin -->
     <section class="callto-section set-bg" data-setbg="img/ctc-bg.jpg">
         <div class="container">
@@ -508,24 +437,38 @@
 
     <!-- Js Plugins -->
     <script>
-        document.getElementById('moreBtn').addEventListener('click', function() {
-            let hiddenItems = document.querySelectorAll('.service-item.hidden');
-            hiddenItems.forEach(function(item) {
-                item.classList.remove('hidden');
-            });
-            this.style.display = 'none';
-            document.getElementById('lessBtn').classList.remove('hidden');
-        });
-        
-        document.getElementById('lessBtn').addEventListener('click', function() {
-            let serviceItems = document.querySelectorAll('.service-item');
-            for (let i = 3; i < serviceItems.length; i++) {
-                serviceItems[i].classList.add('hidden');
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to show all hidden items
+            function showAllItems() {
+                let hiddenItems = document.querySelectorAll('.service-item.hidden');
+                hiddenItems.forEach(function(item) {
+                    item.classList.remove('hidden');
+                });
+                document.getElementById('moreBtn').style.display = 'none';
+                document.getElementById('lessBtn').classList.remove('hidden');
             }
-            this.classList.add('hidden');
-            document.getElementById('moreBtn').style.display = 'inline-block';
+    
+            // Function to hide items except the first 3
+            function hideExtraItems() {
+                let serviceItems = document.querySelectorAll('.service-item');
+                for (let i = 3; i < serviceItems.length; i++) {
+                    serviceItems[i].classList.add('hidden');
+                }
+                document.getElementById('lessBtn').classList.add('hidden');
+                document.getElementById('moreBtn').style.display = 'inline-block';
+            }
+    
+            // Attach event listeners
+            document.getElementById('moreBtn').addEventListener('click', showAllItems);
+            document.getElementById('lessBtn').addEventListener('click', hideExtraItems);
+    
+            // Initial setup to ensure only the first 3 items are visible
+            hideExtraItems();
         });
-        </script>
+    </script>
+    
+
+
         <script>
             document.getElementById('whatsapp-form').addEventListener('submit', function(event) {
     event.preventDefault();
