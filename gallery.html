@@ -230,52 +230,59 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
-                    <div class="footer-about">
-                        <div class="footer-logo">
-                            <a href="index.html"><img src="img/LOGOo.png" style="height: 60px;" alt=""></a>
+                    <div class="footer-option" style="height: 180px;">
+                        <div class="fo-logo" style="height: 19px;">
+                            <a href="index.html">
+                                <img src="img/LOGOo.png" style="height: 40px; width: 40px;" alt="">
+                            </a>
                         </div>
-                        <p>BQ UNIFORMS is a leading supplier of high-quality uniforms for various sectors including schools, hotels, catering, and more. Our focus is on providing durable and stylish uniforms tailored to meet the needs of every industry.</p>
-                        <div class="footer-social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
+                        <ul>
+                            <li>Place: Anjilangadi || Malappuram</li>
+                            <li>Phone: 7034742829</li>
+                            <li>phone: 9946742829</li>
+                            <li>Email: bquniform28@gmail.com</li>
+                        </ul>
+                        
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget">
-                        <h6>Quick Links</h6>
+                    <div class="footer-widget fw-links">
+                        <h5>Useful Links</h5>
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about-us.html">About Us</a></li>
                             <li><a href="services.html">Services</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget">
-                        <h6>Contact Us</h6>
-                        <ul>
-                            <li><i class="fa fa-map-marker-alt"></i> Address: 123 Street, City, Country</li>
-                            <li><i class="fa fa-phone"></i> Phone: +123 456 7890</li>
-                            <li><i class="fa fa-envelope"></i> Email: info@bquniforms.com</li>
-                        </ul>
+                        <h5>Get In Touch With Us.</h5>
+                        <form id="whatsapp-form" class="news-form">
+                            <input type="text" id="message-input" placeholder="Enter your message">
+                            <button type="submit">Send</button>
+                        </form>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget">
-                        <h6>Newsletter</h6>
-                        <form action="#">
-                            <input type="text" placeholder="Enter your email">
-                            <button type="submit" class="site-btn">Subscribe</button>
-                        </form>
+                        <h5>Gallery</h5>
+                        <div class="insta-pic">
+                            <img src="img/gallery/Hospital-1.jpg" alt="">
+                            <img src="img/gallery/security-2.jpeg" alt="">
+                            <img src="img/gallery/corporate-1.png" alt="">
+                            <img src="img/gallery/petrol pump-2.jpg" alt="">
+                            <img src="img/gallery/Chef-1.jpg" alt="">
+                            <img src="img/gallery/catering-1.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="copyright-text"><p>
+                    Copyright  All rights reserved | BQ UNIFORMS
         </div>
+    </section>
     </section>
     <!-- Footer Section End -->
 
@@ -291,7 +298,6 @@
         $(document).ready(function () {
             var mixer = mixitup('.gallery-filter');
 
-            // Handle the fragment identifier
             var hash = window.location.hash.substring(1); // Remove the '#' from the hash
             if (hash) {
                 // Apply the filter based on the hash value
