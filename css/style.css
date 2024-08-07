@@ -1981,7 +1981,7 @@ ol {
 		top: 20px;
 		display: inline-block;
 		float: none;
-		margin-top: -8px;
+		margin-top: 0px;
 	}
 	.slicknav_nav {
 		background: #666;
@@ -2059,7 +2059,7 @@ ol {
 		line-height: normal;
 	}
 	.headimg{
-		margin-top: -25px;
+		margin-top: -8px;
 	}
 }
 
@@ -2114,7 +2114,7 @@ ol {
 		font-size: 22px;
 	}
 	.headimg{
-		margin-top: -25px;
+		margin-top: -18px;
 	}
 }
 
