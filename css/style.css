@@ -1968,6 +1968,9 @@ ol {
 /* Large Mobile: 480px */
 
 @media only screen and (max-width: 767px) {
+	.hero-section {
+		height: 450px;
+	}
 	.main-menu {
 		text-align: right;
 		display: none;
@@ -1981,7 +1984,7 @@ ol {
 		top: 20px;
 		display: inline-block;
 		float: none;
-		margin-top: 0px;
+		margin-top: -4px;
 	}
 	.slicknav_nav {
 		background: #666;
