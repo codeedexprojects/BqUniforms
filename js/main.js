@@ -1,7 +1,3 @@
-
-
-
-
 'use strict';
 
 (function ($) {
@@ -13,6 +9,7 @@
         var itemsToShow = 12; // Number of items to show initially
         var $items = $('.gallery-filter .gs-item');
         var totalItems = $items.length;
+        var activeFilter = '*'; // Default to showing all items
 
         function updateVisibleItems() {
             var currentlyVisible = $items.filter('[data-visible="true"]').length;
@@ -21,20 +18,25 @@
         }
 
         function showItems(number) {
+            var visibleCount = 0;
             $items.each(function (index) {
-                if (index < number) {
-                    $(this).attr('data-visible', 'true').show();
+                var $this = $(this);
+                if ((activeFilter === '*' || $this.hasClass(activeFilter.substring(1))) && visibleCount < number) {
+                    $this.attr('data-visible', 'true').show();
+                    visibleCount++;
                 } else {
-                    $(this).attr('data-visible', 'false').hide();
+                    $this.attr('data-visible', 'false').hide();
                 }
             });
             updateVisibleItems();
         }
 
         function hideItems(number) {
+            var visibleCount = 0;
             $items.each(function (index) {
-                if (index < number) {
+                if (visibleCount < number) {
                     $(this).attr('data-visible', 'true').show();
+                    visibleCount++;
                 } else {
                     $(this).attr('data-visible', 'false').hide();
                 }
@@ -66,19 +68,10 @@
         // Filter functionality
         $('.gallery-controls ul li').click(function () {
             var filterValue = $(this).attr('data-filter');
-            $items.each(function () {
-                var $this = $(this);
-                if (filterValue === '*' || $this.hasClass(filterValue.substring(1))) {
-                    $this.show();
-                } else {
-                    $this.hide();
-                }
-            });
+            activeFilter = filterValue;
 
-            // Adjust visibility based on filter
-            var currentlyVisible = $items.filter(':visible').length;
-            $('#show-more').toggleClass('d-none', currentlyVisible >= totalItems);
-            $('#show-less').toggleClass('d-none', currentlyVisible <= itemsToShow);
+            // Show the first set of items that match the filter
+            showItems(itemsToShow);
 
             $('.gallery-controls ul li').removeClass('active');
             $(this).addClass('active');
@@ -99,14 +92,16 @@
         var bg = $(this).data('setbg');
         $(this).css('background-image', 'url(' + bg + ')');
     });
-      /*------------------
+
+    /*------------------
 		Navigation
 	--------------------*/
     $(".mobile-menu").slicknav({
         prependTo: '#mobile-menu-wrap',
         allowParentLinks: true
     });
-      /*------------------------
+
+    /*------------------------
 		Testimonial Slider
     ----------------------- */
     $(".testimonial-slider").owlCarousel({
