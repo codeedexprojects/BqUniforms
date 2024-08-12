@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hazze Template">
+    <meta name="keywords" content="Hazze, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BQ UNIFORMS | HOTEL UNIFORMS</title>
+    <link rel="icon" href="img/LOGO1.jpg" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        .gallery-controls ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-controls ul li {
+            margin: 10px;
+            padding: 10px 20px;
+            background: #333;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-controls ul li.active,
+        .gallery-controls ul li:hover {
+            background: #333;
+            color: #fff;
+            border-color: #333;
+        }
+
+        .gallery-controls ul li.active {
+            font-weight: bold;
+        }
+
+        .gallery-controls ul li:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery-filter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .gs-item {
+            flex: 0 0 23%; /* Each image takes 23% of the container width, 4 in a row */
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .gs-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gs-item img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 991px) {
+            .gs-item {
+                flex: 0 0 48%; /* 2 in a row for medium screens */
+            }
+        }
+
+        @media (max-width: 575px) {
+            .gs-item {
+                flex: 0 0 100%; /* 1 in a row for small screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="logo" style="height: 35px;">
+                        <a href="index.html">
+                            <img src="img/LOGOo.png" style="height: 35px; margin-top: -5px;" class="headimg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="main-menu mobile-menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about-us.html">About Us</a></li>
+                            <li><a href="./services.html">Services</a></li>
+                            <li><a href="./gallery.html">Gallery</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+
+    <style>
+        .header-section {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+            background-color: #191919; 
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+            height: 70px; 
+    }
+    
+        .breadcrumb-section {
+            margin-top: 70px; 
+    }  
+        </style>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section bread-normal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="breadcrumb-option">
+                        <a href="index.html">Home</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 text-right">
+                    <div class="breadcrumb-text">
+                        <h3>Factory Uniforms</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Gallery Section Begin -->
+    <div class="gallery-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="gallery-controls">
+                        <ul>
+                            <li data-filter=".hotel">Factory Uniforms</li>
+                    </div>
+                </div>
+            </div>
+            <div class="row gallery-filter">
+                <div class="gs-item mix all hotel">
+                    <img src="img/gallery/factory-1.jpg" alt="">
+                </div>
+                <div class="gs-item mix all hotel">
+                    <img src="img/gallery/factory-2.jpg" alt="">
+                </div>
+                <div class="gs-item mix all hotel">
+                    <img src="img/gallery/factory-3.jpg" alt="">
+                </div>
+                <div class="gs-item mix all hotel">
+                    <img src="img/gallery/factory-4.webp" alt="">
+                </div>
+                <div class="gs-item mix all hotel">
+                    <img src="img/gallery/factory-5.webp" alt="">
+                </div>
+                <div class="gs-item mix all hotel">
+                    <img src="img/gallery/factory-6.webp" alt="">
+                </div>
+                <div class="gs-item mix all hotel">
+                    <img src="img/gallery/factory-7.jpg" alt="">
+                </div>
+                <div class="gs-item mix all hotel">
+                    <img src="img/gallery/factory-8.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
+    <!-- Gallery Section End -->
+   
+    <!-- Footer Section Begin -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-option" style="height: 180px;">
+                        <div class="fo-logo" style="height: 19px;">
+                            <a href="index.html">
+                                <img src="img/LOGOo.png" style="height: 40px; width: 40px;" alt="">
+                            </a>
+                        </div>
+                        <ul>
+                            <li>Place: Anjilangadi || Malappuram</li>
+                            <li>Phone: 7034742829</li>
+                            <li>Phone: 9946742829</li>
+                            <li>Email: bquniform28@gmail.com</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget fw-links">
+                        <h5>Useful Links</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h5>Get In Touch With Us.</h5>
+                        <form id="whatsapp-form" class="news-form">
+                            <input type="text" id="message-input" placeholder="Enter your message">
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <a href="gallery.html"><h5>Gallery</h5>
+                        <div class="insta-pic">
+                            <img src="img/gallery/Hospital-1.jpg" alt="">
+                            <img src="img/gallery/security-2.jpeg" alt="">
+                            <img src="img/gallery/corporate-1.png" alt="">
+                            <img src="img/gallery/petrol pump-2.jpg" alt="">
+                            <img src="img/gallery/Chef-1.jpg" alt="">
+                            <img src="img/gallery/catering-1.jpg" alt="">
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+            <div class="copyright-text"><p>
+                  All rights reserved | BQ UNIFORMS
+    </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Script Files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
